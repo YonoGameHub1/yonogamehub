@@ -5,216 +5,207 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>YonoGameHub - Gaming Apps Hub</title>
-<meta name="description" content="YonoGameHub - Discover gaming apps and game platforms in one place.">
+<meta name="description" content="YonoGameHub - Gaming Apps All in One Place">
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#080808;
-    color:#fff;
+font-family:Arial,sans-serif;
+background:#070707;
+color:white;
 }
 
 header{
-    background:#0d0d0d;
-    border-bottom:1px solid #292929;
-    padding:18px 16px;
-    position:sticky;
-    top:0;
-    z-index:10;
+background:#0d0d0d;
+border-bottom:1px solid #292929;
+padding:17px 15px;
+position:sticky;
+top:0;
+z-index:10;
 }
 
 .logo{
-    font-size:25px;
-    font-weight:800;
-    text-align:center;
-    color:#d9a928;
+text-align:center;
+font-size:25px;
+font-weight:900;
+color:#d9a928;
 }
 
 .tagline{
-    text-align:center;
-    font-size:12px;
-    color:#999;
-    margin-top:5px;
+text-align:center;
+font-size:12px;
+color:#999;
+margin-top:5px;
 }
 
 .hero{
-    padding:35px 18px 25px;
-    text-align:center;
-    background:linear-gradient(180deg,#15120a,#080808);
+padding:35px 18px 25px;
+text-align:center;
+background:linear-gradient(180deg,#181309,#070707);
 }
 
 .hero h1{
-    font-size:30px;
-    line-height:1.15;
-    margin-bottom:12px;
+font-size:30px;
+margin-bottom:10px;
 }
 
 .hero h1 span{
-    color:#e0b43b;
+color:#e0b43b;
 }
 
 .hero p{
-    color:#aaa;
-    font-size:14px;
-    line-height:1.6;
+color:#aaa;
+font-size:14px;
+line-height:1.6;
 }
 
 .search{
-    margin:22px auto 0;
-    max-width:500px;
+margin:20px auto 0;
+max-width:600px;
 }
 
 .search input{
-    width:100%;
-    padding:15px 18px;
-    border-radius:12px;
-    border:1px solid #383838;
-    background:#111;
-    color:white;
-    outline:none;
-    font-size:15px;
-}
-
-.search input:focus{
-    border-color:#d9a928;
+width:100%;
+padding:15px;
+border-radius:12px;
+border:1px solid #383838;
+background:#111;
+color:white;
+font-size:15px;
+outline:none;
 }
 
 .container{
-    max-width:650px;
-    margin:auto;
-    padding:20px 14px 40px;
+max-width:700px;
+margin:auto;
+padding:20px 14px 40px;
 }
 
-.section-title{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin:10px 0 15px;
+.title{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:8px 0 15px;
 }
 
-.section-title h2{
-    font-size:20px;
+.title h2{
+font-size:20px;
 }
 
 .badge{
-    font-size:11px;
-    color:#080808;
-    background:#d9a928;
-    padding:6px 9px;
-    border-radius:20px;
-    font-weight:bold;
+background:#d9a928;
+color:#080808;
+padding:6px 9px;
+border-radius:20px;
+font-size:11px;
+font-weight:bold;
 }
 
 .grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:12px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
 }
 
 .card{
-    background:#111;
-    border:1px solid #292929;
-    border-radius:16px;
-    padding:15px;
-    text-align:center;
-    transition:.2s;
+background:linear-gradient(180deg,#151515,#101010);
+border:1px solid #292929;
+border-radius:16px;
+padding:15px 12px;
+text-align:center;
 }
 
 .card:hover{
-    border-color:#d9a928;
-    transform:translateY(-2px);
+border-color:#d9a928;
 }
 
 .app-logo{
-    width:65px;
-    height:65px;
-    margin:0 auto 10px;
-    border-radius:15px;
-    background:#202020;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:27px;
+width:68px;
+height:68px;
+margin:0 auto 10px;
+border-radius:17px;
+background:linear-gradient(145deg,#292929,#101010);
+border:1px solid #4a3b16;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.app-logo span{
+font-size:20px;
+font-weight:900;
+color:#e5bd50;
 }
 
 .card h3{
-    font-size:15px;
-    margin-bottom:6px;
+font-size:15px;
+margin-bottom:6px;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
 }
 
-.bonus{
-    font-size:12px;
-    color:#aaa;
-    margin-bottom:13px;
+.category{
+font-size:11px;
+color:#999;
+margin-bottom:12px;
 }
 
 .join{
-    display:block;
-    width:100%;
-    text-decoration:none;
-    background:#d9a928;
-    color:#080808;
-    padding:11px 5px;
-    border-radius:9px;
-    font-size:13px;
-    font-weight:800;
-}
-
-.join:hover{
-    background:#f0c64e;
+display:block;
+background:#d9a928;
+color:#080808;
+text-decoration:none;
+padding:11px 5px;
+border-radius:9px;
+font-size:12px;
+font-weight:900;
 }
 
 .info{
-    margin-top:25px;
-    background:#101010;
-    border:1px solid #252525;
-    border-radius:15px;
-    padding:18px;
+margin-top:25px;
+background:#101010;
+border:1px solid #252525;
+border-radius:15px;
+padding:18px;
 }
 
 .info h2{
-    color:#d9a928;
-    font-size:18px;
-    margin-bottom:10px;
+color:#d9a928;
+font-size:18px;
+margin-bottom:10px;
 }
 
 .info p{
-    color:#999;
-    font-size:13px;
-    line-height:1.7;
+color:#999;
+font-size:13px;
+line-height:1.7;
 }
 
 footer{
-    border-top:1px solid #242424;
-    padding:25px 15px;
-    text-align:center;
-    color:#777;
-    font-size:12px;
-}
-
-footer a{
-    color:#aaa;
-    text-decoration:none;
-    margin:0 7px;
+border-top:1px solid #242424;
+padding:25px 15px;
+text-align:center;
+color:#777;
+font-size:12px;
 }
 
 .disclaimer{
-    margin-top:15px;
-    font-size:11px;
-    line-height:1.6;
-    color:#666;
+margin-top:15px;
+font-size:11px;
+line-height:1.6;
+color:#666;
 }
 
 @media(max-width:380px){
-    .grid{
-        grid-template-columns:1fr;
-    }
+.grid{
+grid-template-columns:1fr;
+}
 }
 </style>
 </head>
@@ -222,115 +213,288 @@ footer a{
 <body>
 
 <header>
-    <div class="logo">YonoGameHub</div>
-    <div class="tagline">Gaming Apps • All in One Place</div>
+<div class="logo">YonoGameHub</div>
+<div class="tagline">Gaming Apps • All in One Place</div>
 </header>
 
 <section class="hero">
-    <h1>Discover <span>Gaming Apps</span></h1>
-    <p>Explore gaming platforms and useful information from one simple mobile-friendly hub.</p>
+<h1>Discover <span>Gaming Apps</span></h1>
 
-    <div class="search">
-        <input type="text" id="searchBox" placeholder="🔍 Search games..." onkeyup="searchGames()">
-    </div>
+<p>
+Explore gaming platforms from one simple,
+fast and mobile-friendly hub.
+</p>
+
+<div class="search">
+<input
+type="text"
+id="searchBox"
+placeholder="🔍 Search games..."
+oninput="searchGames()">
+</div>
 </section>
 
 <main class="container">
 
-    <div class="section-title">
-        <h2>🔥 Featured Games</h2>
-        <span class="badge">POPULAR</span>
-    </div>
+<div class="title">
+<h2>🔥 Gaming Apps</h2>
+<span class="badge">25 APPS</span>
+</div>
 
-    <div class="grid" id="gameGrid">
+<div class="grid">
 
-        <div class="card">
-            <div class="app-logo">🎮</div>
-            <h3>Yono Game 1</h3>
-            <div class="bonus">Gaming App</div>
-            <a class="join" href="#" target="_blank">JOIN NOW</a>
-        </div>
+<!-- 1 -->
+<div class="card">
+<div class="app-logo"><span>101Z</span></div>
+<h3>101 Z</h3>
+<div class="category">Gaming App</div>
+<a class="join" href="https://101zvip9.com/?code=398CAH1CFUT&t=1789201209" target="_blank">JOIN NOW ↗</a>
+</div>
 
-        <div class="card">
-            <div class="app-logo">🎯</div>
-            <h3>Yono Game 2</h3>
-            <div class="bonus">Gaming App</div>
-            <a class="join" href="#" target="_blank">JOIN NOW</a>
-        </div>
+<!-- 2 -->
+<div class="card">
+<div class="app-logo"><span>YV</span></div>
+<h3>Yono VIP</h3>
+<div class="category">Gaming App</div>
+<a class="join" href="https://yonovipindia.net/?code=3CR91PS8BTK&t=1789201451" target="_blank">JOIN NOW ↗</a>
+</div>
 
-        <div class="card">
-            <div class="app-logo">🏆</div>
-            <h3>Yono Game 3</h3>
-            <div class="bonus">Gaming App</div>
-            <a class="join" href="#" target="_blank">JOIN NOW</a>
-        </div>
+<!-- 3 -->
+<div class="card">
+<div class="app-logo"><span>YR</span></div>
+<h3>Yono Rummy</h3>
+<div class="category">Rummy App</div>
+<a class="join" href="https://yonorummy053.com/?code=VIPA1765R7C&t=1789201805" target="_blank">JOIN NOW ↗</a>
+</div>
 
-        <div class="card">
-            <div class="app-logo">⭐</div>
-            <h3>Yono Game 4</h3>
-            <div class="bonus">Gaming App</div>
-            <a class="join" href="#" target="_blank">JOIN NOW</a>
-        </div>
+<!-- 4 -->
+<div class="card">
+<div class="app-logo"><span>SS</span></div>
+<h3>SLOT SPIN</h3>
+<div class="category">Slots App</div>
+<a class="join" href="https://slotsspink.com/?code=XJB4LRZSSE4&t=1789201981" target="_blank">JOIN NOW ↗</a>
+</div>
 
-        <div class="card">
-            <div class="app-logo">🎲</div>
-            <h3>Yono Game 5</h3>
-            <div class="bonus">Gaming App</div>
-            <a class="join" href="#" target="_blank">JOIN NOW</a>
-        </div>
+<!-- 5 -->
+<div class="card">
+<div class="app-logo"><span>R8</span></div>
+<h3>Rummy888</h3>
+<div class="category">Rummy App</div>
+<a class="join" href="https://rummy888vip34.com/?code=TPU7SX3GKKC&t=1789202232" target="_blank">JOIN NOW ↗</a>
+</div>
 
-        <div class="card">
-            <div class="app-logo">🕹️</div>
-            <h3>Yono Game 6</h3>
-            <div class="bonus">Gaming App</div>
-            <a class="join" href="#" target="_blank">JOIN NOW</a>
-        </div>
+<!-- 6 -->
+<div class="card">
+<div class="app-logo"><span>JR</span></div>
+<h3>JaiHoRummy</h3>
+<div class="category">Rummy App</div>
+<a class="join" href="https://jaihocash.com/?code=E74L2NFZC87&t=1789202351" target="_blank">JOIN NOW ↗</a>
+</div>
 
-    </div>
+<!-- 7 -->
+<div class="card">
+<div class="app-logo"><span>RV</span></div>
+<h3>Rummy VIP</h3>
+<div class="category">Rummy App</div>
+<a class="join" href="https://www.joyrummyace.com/?code=J5KMMS1PMY6&t=1789202466" target="_blank">JOIN NOW ↗</a>
+</div>
 
-    <div class="info">
-        <h2>About YonoGameHub</h2>
-        <p>
-            YonoGameHub is a gaming-app directory designed to help visitors
-            discover different gaming platforms and access their information
-            from one place.
-        </p>
-    </div>
+<!-- 8 -->
+<div class="card">
+<div class="app-logo"><span>SW</span></div>
+<h3>Slots Winner</h3>
+<div class="category">Slots App</div>
+<a class="join" href="https://slotswinneri.com/?code=K4EGEZSTBE2&t=1789202590" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 9 -->
+<div class="card">
+<div class="app-logo"><span>GR</span></div>
+<h3>GameRummy</h3>
+<div class="category">Rummy App</div>
+<a class="join" href="https://gamerummya.com/?code=Q6WUB9D3MCG&t=1789205790" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 10 -->
+<div class="card">
+<div class="app-logo"><span>S101</span></div>
+<h3>SPIN 101</h3>
+<div class="category">Spin App</div>
+<a class="join" href="https://101spin.life/?code=P4C79FXGDSQ&t=1789205886" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 11 -->
+<div class="card">
+<div class="app-logo"><span>DT</span></div>
+<h3>DIWA TOP</h3>
+<div class="category">Gaming App</div>
+<a class="join" href="https://diwatopshare.one?pid=327429494&channel=2010002&t=pdd2&pkg=com.diwatopwhl.app" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 12 -->
+<div class="card">
+<div class="app-logo"><span>GS</span></div>
+<h3>GOOD SLOT</h3>
+<div class="category">Slots App</div>
+<a class="join" href="https://1sharegoodslots.vip?pid=354316703&channel=2010001&t=pdd2&pkg=com.goodslots.app" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 13 -->
+<div class="card">
+<div class="app-logo"><span>MQM</span></div>
+<h3>MQM BET</h3>
+<div class="category">Gaming App</div>
+<a class="join" href="https://0mqmshare.vip?pid=330649977&channel=2010001&t=pdd2&pkg=com.mqm.bet" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 14 -->
+<div class="card">
+<div class="app-logo"><span>DX</span></div>
+<h3>Diwa X</h3>
+<div class="category">Gaming App</div>
+<a class="join" href="https://diwaxshare.net?pid=325486643&channel=2010002&t=pdd2&pkg=com.diwax002.app" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 15 -->
+<div class="card">
+<div class="app-logo"><span>DK</span></div>
+<h3>Diwa King</h3>
+<div class="category">Gaming App</div>
+<a class="join" href="https://diwakingshare.me?pid=455456024&channel=2010002&t=pdd2&pkg=com.diwaking0002.com" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 16 -->
+<div class="card">
+<div class="app-logo"><span>DP</span></div>
+<h3>Diwa Play</h3>
+<div class="category">Gaming App</div>
+<a class="join" href="https://diwaplayshare.me?pid=348088706&channel=2010002&t=pdd2&pkg=com.diwaplaywhl.app" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 17 -->
+<div class="card">
+<div class="app-logo"><span>567</span></div>
+<h3>567 Slots</h3>
+<div class="category">Slots App</div>
+<a class="join" href="https://join567slots0.com/?code=4NYJJ5NVGKX&t=1789206799" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 18 -->
+<div class="card">
+<div class="app-logo"><span>HR</span></div>
+<h3>Hi Rummy</h3>
+<div class="category">Rummy App</div>
+<a class="join" href="https://joinhirummy.com/?code=RX3E1CA416Z&t=1789206900" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 19 -->
+<div class="card">
+<div class="app-logo"><span>S777</span></div>
+<h3>SPIN777</h3>
+<div class="category">Spin App</div>
+<a class="join" href="https://spin777dd.com/?code=7V9MH356V8R&t=1789206970" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 20 -->
+<div class="card">
+<div class="app-logo"><span>SH</span></div>
+<h3>Share Slots</h3>
+<div class="category">Slots App</div>
+<a class="join" href="https://share377.com/?code=YAZC7A5NFF1&t=1789207044" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 21 -->
+<div class="card">
+<div class="app-logo"><span>JS</span></div>
+<h3>JaihoSpin</h3>
+<div class="category">Spin App</div>
+<a class="join" href="https://3jaihospinwin.com/?code=7TANKNVSBFV&t=1789207101" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 22 -->
+<div class="card">
+<div class="app-logo"><span>DG</span></div>
+<h3>Dhan Game</h3>
+<div class="category">Gaming App</div>
+<a class="join" href="https://dhangameguide.com/?code=1F83W9R7VEN&t=1789207189" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 23 -->
+<div class="card">
+<div class="app-logo"><span>YN</span></div>
+<h3>YN777</h3>
+<div class="category">Gaming App</div>
+<a class="join" href="https://www.yn077.com/?code=4SW8WYKQ237&t=1789207296" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 24 -->
+<div class="card">
+<div class="app-logo"><span>GG</span></div>
+<h3>Gogo Rummy</h3>
+<div class="category">Rummy App</div>
+<a class="join" href="https://www.gogorummy24.com/?code=M5W9JY2NKHX&t=1789207366" target="_blank">JOIN NOW ↗</a>
+</div>
+
+<!-- 25 -->
+<div class="card">
+<div class="app-logo"><span>NV</span></div>
+<h3>Neta.VIP</h3>
+<div class="category">Gaming App</div>
+<a class="join" href="https://neta2.vip/?code=DR072SVBKZV&t=1789207518" target="_blank">JOIN NOW ↗</a>
+</div>
+
+</div>
+
+<div class="info">
+<h2>About YonoGameHub</h2>
+
+<p>
+YonoGameHub is a directory that helps visitors discover
+different gaming platforms and access the links provided
+on this website. YonoGameHub does not claim ownership
+or official affiliation with the listed apps.
+</p>
+</div>
 
 </main>
 
 <footer>
-    <div>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Disclaimer</a>
-    </div>
 
-    <div class="disclaimer">
-        18+ where applicable. Please check the terms, eligibility and
-        applicable laws before using any gaming platform.
-    </div>
+<p>
+18+ where applicable. Gaming involving money can carry
+financial risk and may be restricted by law in some
+locations. Check each platform's terms, eligibility
+and applicable local laws before using it. Play responsibly.
+</p>
 
-    <p style="margin-top:15px;">© 2026 YonoGameHub. All rights reserved.</p>
+<p style="margin-top:15px;">
+© 2026 YonoGameHub. All rights reserved.
+</p>
+
 </footer>
 
 <script>
 function searchGames(){
-    let input = document.getElementById("searchBox").value.toLowerCase();
-    let cards = document.querySelectorAll(".card");
 
-    cards.forEach(function(card){
-        let name = card.innerText.toLowerCase();
+let input=document
+.getElementById("searchBox")
+.value
+.toLowerCase()
+.trim();
 
-        if(name.includes(input)){
-            card.style.display = "";
-        }else{
-            card.style.display = "none";
-        }
-    });
+document
+.querySelectorAll(".card")
+.forEach(function(card){
+
+let name=card.innerText.toLowerCase();
+
+card.style.display=
+name.includes(input) ? "" : "none";
+
+});
+
 }
 </script>
 
 </body>
-      </html>
+    </html>
